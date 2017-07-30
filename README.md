@@ -1,6 +1,9 @@
 # Membership Portal
-# configure your db in config.php and install the portal by www.yourdomain.com/install.php#
+# configure your db in config.php
 
+# To install the portal upload the files in your root directory under public_html and run install.php file (www.yourdomain.com/install.php)
+
+#config.php file
 <?php
 $db_host = "localhost";  // server to connect to.
 $db_name = "login";  // the name of the database.
@@ -8,4 +11,4 @@ $db_user = "database username";  // mysql username to access the database with.
 $db_pass = "database password";  // mysql password to access the database with.
 $db_table = "users";    // the table that this script will set up and use.
 ?>
-```
+
