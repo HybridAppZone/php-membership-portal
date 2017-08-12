@@ -4,11 +4,11 @@ include("config.php");
 
 // connect to the mysql server
 $link = mysqli_connect($db_host, $db_user, $db_pass)
-or die ("Could not connect to mysql because ".mysql_error());
+or die ("Could not connect to mysql because ".mysqli_error());
 
 // select the database
 mysqli_select_db($link, 'portal') 
-or die ("Could not select database because ".mysql_error());
+or die ("Could not select database because ".mysqli_error());
 
 echo $match = "select user_id from $db_table where username = '".$_POST['username']."'
 and password = '".$_POST['password']."';"; 
